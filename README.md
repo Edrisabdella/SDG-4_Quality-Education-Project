@@ -6,6 +6,7 @@ Overview
 OpenLearn is a comprehensive digital education initiative designed to directly address UN Sustainable Development Goal 4 (SDG 4): Quality Education. Our platform tackles educational inequality by combining peer-to-peer tutoring with a rich digital resource hub, specifically targeting underserved communities and bridging the digital divide.
 We recognize that limited access to quality education, digital resources, and academic support creates significant barriers to learning. OpenLearn dismantles these barriers by creating an inclusive ecosystem where students become both learners and educators, fostering a sustainable cycle of knowledge sharing and collaborative growth.
 Problem Statement
+
 	Limited access to quality education in underserved communities
 	Digital divide and lack of technological resources exacerbating educational inequality
 	Insufficient academic support systems for students struggling with various subjects
@@ -34,7 +35,8 @@ Impact Metrics
 	Free learning resources accessible to unlimited users worldwide
 	Enhanced collaborative learning experiences through structured peer interactions
 	Scalable model designed for expansion to other regions and educational contexts
-Deployment & Live Demo
+Deployment & Live Demo:
+https://vercel.com/edris-abdellas-projects/sdg-4-quality-education-project/settings/domains
 Experience OpenLearn in action:
 GitHub Repository
 Contribute to our open-source project:
