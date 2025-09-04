@@ -78,6 +78,7 @@ We welcome contributions of all types:
 Please see our CONTRIBUTING.md guidelines for detailed information.
 Pitch Deck
 For a comprehensive overview of our vision, approach, and impact metrics, view our detailed pitch deck:
+https://gamma.app/docs/OpenLearn-Inclusive-Peer-to-Peer-Digital-Education-Platform-okuth4nuoa4bcmg
 PitchDeck:https://app.pitch.com/app/presentation/4094ae48-95ac-46e6-9ab3-0c8bc764b34d/cc650e07-c047-4891-a6bd-0b9affeeaeb2
  
 License
