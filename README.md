@@ -49,7 +49,9 @@ Impact Metrics
 
 Deployment & Live Demo:
 
-https://vercel.com/edris-abdellas-projects/sdg-4-quality-education-project/settings/domains Experience OpenLearn in action:
+https://vercel.com/edris-abdellas-projects/sdg-4-quality-education-project/settings/domains
+
+Experience OpenLearn in action:
 
 GitHub Repository Contribute to our open-source project: 
 
@@ -64,13 +66,13 @@ Phase 1 (Months 1-3)
 - Build core Digital Resource Hub functionality
 - Develop initial repository of educational resources
 - Establish basic platform architecture
-- 
+  
 Phase 2 (Months 4-6)
 
 - Implement peer-to-peer tutoring features
 - Develop matching algorithm for tutor-student pairs
 - Launch awareness campaigns for lifelong learning
-- 
+  
 Phase 3 (Months 6-12)
 
 - Expand resource library with diverse materials
@@ -102,7 +104,7 @@ We welcome contributions of all types:
 - Content Creation: Help develop educational materials
 - Testing: Provide feedback on platform usability
 - Translation: Help make OpenLearn accessible in more languages
-- Outreach: Connect us with potential partners and beneficiaries 
+- Outreach: Connect us with potential partners and beneficiaries
 - Please see our CONTRIBUTING.md guidelines for detailed information.
 
 Pitch Deck
@@ -125,6 +127,7 @@ Contact & Get Involved
 - Open project: : https://github.com/Edrisabdella/SDG-4_Quality-Education-Project.git
 - GitHub profile link: https://github.com/Edrisabdella
 - Join our mission to make quality education accessible to all.
+  
 Together, we can bridge educational gaps and create a more equitable learning landscape for future generations.
 
 OpenLearn: Bridging educational gaps with technology, one learner at a time.
