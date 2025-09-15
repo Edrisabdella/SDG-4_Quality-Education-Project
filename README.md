@@ -49,7 +49,13 @@ Impact Metrics
 
 Deployment & Live Demo:
 
-https://vercel.com/edris-abdellas-projects/sdg-4-quality-education-project/settings/domains Experience OpenLearn in action: GitHub Repository Contribute to our open-source project: GitHub Repo: https://github.com/Edrisabdella/SDG-4_Quality-Education-Project.git We welcome issues, feature requests, and pull requests from the community.
+https://vercel.com/edris-abdellas-projects/sdg-4-quality-education-project/settings/domains Experience OpenLearn in action:
+
+GitHub Repository Contribute to our open-source project: 
+
+GitHub Repo: https://github.com/Edrisabdella/SDG-4_Quality-Education-Project.git 
+
+We welcome issues, feature requests, and pull requests from the community.
 
 Roadmap & Timeline
 
@@ -57,12 +63,16 @@ Phase 1 (Months 1-3)
 
 - Build core Digital Resource Hub functionality
 - Develop initial repository of educational resources
-- Establish basic platform architecture 
+- Establish basic platform architecture
+- 
 Phase 2 (Months 4-6)
+
 - Implement peer-to-peer tutoring features
 - Develop matching algorithm for tutor-student pairs
 - Launch awareness campaigns for lifelong learning
+- 
 Phase 3 (Months 6-12)
+
 - Expand resource library with diverse materials
 - Establish partnerships with schools and NGOs
 - Implement advanced features based on user feedback
@@ -98,7 +108,9 @@ We welcome contributions of all types:
 Pitch Deck
 
 For a comprehensive overview of our vision, approach, and impact metrics, view our detailed pitch deck: 
+
 https://gamma.app/docs/OpenLearn-Inclusive-Peer-to-Peer-Digital-Education-Platform-okuth4nuoa4bcmg 
+
 PitchDeck:https://app.pitch.com/app/presentation/4094ae48-95ac-46e6-9ab3-0c8bc764b34d/cc650e07-c047-4891-a6bd-0b9affeeaeb2
 
 License
