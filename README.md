@@ -6,18 +6,17 @@ Overview
 OpenLearn is a comprehensive digital education initiative designed to directly address UN Sustainable Development Goal 4 (SDG 4): Quality Education. Our platform tackles educational inequality by combining peer-to-peer tutoring with a rich digital resource hub, specifically targeting underserved communities and bridging the digital divide.
 We recognize that limited access to quality education, digital resources, and academic support creates significant barriers to learning. OpenLearn dismantles these barriers by creating an inclusive ecosystem where students become both learners and educators, fostering a sustainable cycle of knowledge sharing and collaborative growth.
 Problem Statement
-
 	Limited access to quality education in underserved communities
 	Digital divide and lack of technological resources exacerbating educational inequality
 	Insufficient academic support systems for students struggling with various subjects
 	Lack of awareness about lifelong learning opportunities and digital educational tools
- Our Solution
+Our Solution
 OpenLearn provides a multi-faceted approach to educational support:
-1.	Peer-to-Peer Tutoring Platform: Connecting learners with student tutors for personalized academic support
-2.	Digital Resource Hub: Curated collection of free educational materials (PDFs, eBooks, videos, tutorials)
-3.	Community Learning Circles: Facilitated study groups for collaborative learning experiences
-4.	Awareness Campaigns: Promoting the importance of lifelong learning and digital literacy
-✨ Key Features
+1.  Peer-to-Peer Tutoring Platform: Connecting learners with student tutors for personalized academic support
+2.  Digital Resource Hub: Curated collection of free educational materials (PDFs, eBooks, videos, tutorials)
+3.  Community Learning Circles: Facilitated study groups for collaborative learning experiences
+4.  Awareness Campaigns: Promoting the importance of lifelong learning and digital literacy
+Key Features
 	Study Groups & Community Learning Circles: Virtual spaces for collaborative learning and knowledge exchange
 	Comprehensive Digital Resource Hub: Freely accessible educational materials across multiple subjects
 	Diverse Educational Content: Video tutorials, interactive exercises, and downloadable resources
@@ -68,19 +67,17 @@ To accelerate our impact, we require:
 	Funding Support: To expand our resource library and platform capabilities
 	Software Resources: Tools for development, testing, and deployment
 	Marketing Support: To increase awareness and reach more learners
- How to Contribute
+How to Contribute
 We welcome contributions of all types:
-1.	Code Contributions: Fork our repository and submit pull requests
-2.	Content Creation: Help develop educational materials
-3.	Testing: Provide feedback on platform usability
-4.	Translation: Help make OpenLearn accessible in more languages
-5.	Outreach: Connect us with potential partners and beneficiaries
+1.  Code Contributions: Fork our repository and submit pull requests
+2.  Content Creation: Help develop educational materials
+3.  Testing: Provide feedback on platform usability
+4.  Translation: Help make OpenLearn accessible in more languages
+5.  Outreach: Connect us with potential partners and beneficiaries
 Please see our CONTRIBUTING.md guidelines for detailed information.
 Pitch Deck
-For a comprehensive overview of our vision, approach, and impact metrics, view our detailed pitch deck:
-https://gamma.app/docs/OpenLearn-Inclusive-Peer-to-Peer-Digital-Education-Platform-okuth4nuoa4bcmg
+For a comprehensive overview of our vision, approach, and impact metrics, view our detailed pitch deck: https://gamma.app/docs/OpenLearn-Inclusive-Peer-to-Peer-Digital-Education-Platform-okuth4nuoa4bcmg
 PitchDeck:https://app.pitch.com/app/presentation/4094ae48-95ac-46e6-9ab3-0c8bc764b34d/cc650e07-c047-4891-a6bd-0b9affeeaeb2
- 
 License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
 Contact & Get Involved
@@ -91,4 +88,3 @@ Edris Abdella - Project Lead
 	GitHub profile link: https://github.com/Edrisabdella
 Join our mission to make quality education accessible to all. Together, we can bridge educational gaps and create a more equitable learning landscape for future generations.
 OpenLearn: Bridging educational gaps with technology, one learner at a time.
-
