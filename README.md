@@ -115,4 +115,5 @@ Contact & Get Involved
 - 	Open project: : https://github.com/Edrisabdella/SDG-4_Quality-Education-Project.git
 - 	GitHub profile link: https://github.com/Edrisabdella
 -  Join our mission to make quality education accessible to all. Together, we can bridge educational gaps and create a more equitable learning landscape for future generations.
+  
 OpenLearn: Bridging educational gaps with technology, one learner at a time.
