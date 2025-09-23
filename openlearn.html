@@ -103,6 +103,16 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
         
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
         /* Hero Section */
         .hero {
             background: linear-gradient(rgba(10, 151, 217, 0.8), rgba(26, 75, 140, 0.9)), url('https://images.unsplash.com/photo-1522881193457-37ae97c905bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80');
@@ -350,6 +360,20 @@
             border: 5px solid var(--primary);
         }
         
+        .contributors {
+            margin-top: 3rem;
+            text-align: center;
+            padding: 2rem;
+            background: var(--light);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .contributors h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
         /* CTA Section */
         .cta {
             background: linear-gradient(135deg, var(--primary), var(--secondary));
@@ -435,10 +459,42 @@
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
         
+        .contact-info {
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .contact-info h4 {
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+        
         /* Responsive Design */
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: linear-gradient(135deg, var(--primary), var(--secondary));
+                padding: 1rem 0;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .nav-links li {
+                margin: 0.5rem 0;
+                text-align: center;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
             }
             
             .hero h1 {
@@ -467,6 +523,10 @@
                 left: 0;
                 text-align: left;
             }
+            
+            .left::after, .right::after {
+                left: 18px;
+            }
         }
     </style>
 </head>
@@ -479,6 +539,9 @@
                     <i class="fas fa-graduation-cap"></i>
                     <span>OpenLearn</span>
                 </div>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
                 <ul class="nav-links">
                     <li><a href="#problem">Problem</a></li>
                     <li><a href="#solution">Solution</a></li>
@@ -686,23 +749,16 @@
             </div>
             <div class="team-members">
                 <div class="team-member">
-                    <img src="https://drive.google.com/file/d/1A0hc-5R9qS97rBB1jIHqUKQ1xl-ycfd1/view" alt="Edris Abdella">
+                    <img src="https://i.ibb.co/k2Dbn149/edris-passport-size-photo.jpg" alt="Edris Abdella">
                     <h3>Edris Abdella</h3>
-                    <p>Project Lead</p>
+                    <p>Project Lead & Full Stack Engineer</p>
                     <p>Education Technology Specialist</p>
                 </div>
-                <div class="team-member">
-                    <img src="https://images" alt="Second Team Member">
-                    <h3>Second team</h3>
-                    <p>Lead Developer</p>
-                    <p>Full Stack Engineer</p>
-                </div>
-                <div class="team-member">
-                    <img src="https://images" alt="Third Team Member">
-                    <h3>third team</h3>
-                    <p>Education Specialist</p>
-                    <p>Curriculum Design</p>
-                </div>
+            </div>
+            <div class="contributors">
+                <h3>Contributors</h3>
+                <p><strong>Edris Abdella</strong> – Project Lead & EdTech Specialist</p>
+                <p><strong>Team Members</strong> – Developers, Curriculum Designers, and Volunteers</p>
             </div>
         </div>
     </section>
@@ -742,19 +798,40 @@
                 </div>
                 <div class="footer-section">
                     <h3>Connect With Us</h3>
-                    <p><i class="fas fa-envelope"></i> Email:edrisabdella178@gmail.com and info@openlearn.org</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Global Initiative</p>
                     <p><i class="fas fa-link"></i> <a href="https://github.com/EdrisAbdella/openlearn-sdg4" target="_blank">GitHub Repository</a></p>
                     <p><i class="fas fa-external-link-alt"></i> <a href="https://openlearn-sdg4.vercel.app" target="_blank">Live Demo</a></p>
+                    
+                    <div class="contact-info">
+                        <h4>Contact & Get Involved</h4>
+                        <p><strong>Edris Abdella – Project Lead</strong></p>
+                        <p><i class="fas fa-envelope"></i> Email: edrisabdella178@gmail.com</p>
+                        <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/edris-abdella-nuure-7aa521177" target="_blank">Edris Abdella Nuure</a></p>
+                        <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/Edrisabdella" target="_blank">Edrisabdella</a></p>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 OpenLearn. All rights reserved. | Designed for SDG 4: Quality Education:by Edris Abdella</p>
+                <p>&copy; 2023 OpenLearn. All rights reserved. | Designed for SDG 4: Quality Education by Edris Abdella</p>
             </div>
         </div>
     </footer>
 
     <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
         // Simple smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -804,5 +881,4 @@
         observer.observe(metricsSection);
     </script>
 </body>
-
 </html>
