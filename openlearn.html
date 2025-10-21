@@ -8,12 +8,28 @@
     <style>
         :root {
             --primary: #0A97D9;
+            --primary-dark: #0884b8;
             --secondary: #1A4B8C;
             --accent: #FF6B6B;
+            --accent-dark: #ff5252;
             --light: #F8F9FA;
             --dark: #212529;
             --success: #28a745;
             --warning: #ffc107;
+            --danger: #dc3545;
+            --gray-100: #f8f9fa;
+            --gray-200: #e9ecef;
+            --gray-300: #dee2e6;
+            --gray-400: #ced4da;
+            --gray-500: #adb5bd;
+            --gray-600: #6c757d;
+            --gray-700: #495057;
+            --gray-800: #343a40;
+            --gray-900: #212529;
+            
+            --border-radius: 8px;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
         
         * {
@@ -44,7 +60,7 @@
             position: sticky;
             top: 0;
             z-index: 100;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: var(--shadow);
         }
         
         nav {
@@ -98,9 +114,28 @@
         }
         
         .btn:hover {
-            background-color: #ff5252;
+            background-color: var(--accent-dark);
             transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+        
+        .btn-outline:hover {
+            background-color: var(--primary);
+            color: white;
         }
         
         /* Mobile Menu */
@@ -171,8 +206,9 @@
             background: var(--light);
             border-radius: 10px;
             padding: 2rem;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            box-shadow: var(--shadow);
             transition: transform 0.3s ease;
+            text-align: center;
         }
         
         .problem-card:hover {
@@ -200,8 +236,13 @@
             background: white;
             border-radius: 10px;
             padding: 2rem;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            box-shadow: var(--shadow);
             text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
         }
         
         .feature-card i {
@@ -329,7 +370,7 @@
             padding: 20px;
             background-color: white;
             border-radius: 6px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: var(--shadow);
         }
         
         /* Team */
@@ -348,7 +389,7 @@
             padding: 2rem;
             background: var(--light);
             border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            box-shadow: var(--shadow);
         }
         
         .team-member img {
@@ -366,7 +407,7 @@
             padding: 2rem;
             background: var(--light);
             border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            box-shadow: var(--shadow);
         }
         
         .contributors h3 {
@@ -470,6 +511,233 @@
             color: var(--accent);
         }
         
+        /* Forms */
+        .form-container {
+            max-width: 500px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--gray-700);
+        }
+        
+        .form-input, .form-select, .form-textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--gray-300);
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-input:focus, .form-select:focus, .form-textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(10, 151, 217, 0.1);
+        }
+        
+        .form-textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        /* Resource Cards */
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .resource-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease;
+        }
+        
+        .resource-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .resource-image {
+            height: 180px;
+            background-color: var(--light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 3rem;
+        }
+        
+        .resource-content {
+            padding: 1.5rem;
+        }
+        
+        .resource-category {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .resource-title {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .resource-description {
+            color: var(--gray-600);
+            margin-bottom: 1rem;
+        }
+        
+        .resource-meta {
+            display: flex;
+            justify-content: space-between;
+            color: var(--gray-500);
+            font-size: 0.9rem;
+        }
+        
+        /* Dashboard */
+        .dashboard {
+            padding: 2rem 0;
+        }
+        
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .dashboard-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+        
+        .dashboard-card i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .dashboard-card h3 {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .modal.active {
+            display: flex;
+        }
+        
+        .modal-content {
+            background: white;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 500px;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .modal-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--gray-200);
+            display: flex;
+            justify-content: between;
+            align-items: center;
+        }
+        
+        .modal-title {
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+        
+        .modal-close {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--gray-500);
+        }
+        
+        .modal-body {
+            padding: 1.5rem;
+        }
+        
+        .modal-footer {
+            padding: 1rem 1.5rem;
+            border-top: 1px solid var(--gray-200);
+            display: flex;
+            justify-content: flex-end;
+            gap: 1rem;
+        }
+        
+        /* Tabs */
+        .tabs {
+            margin-bottom: 2rem;
+        }
+        
+        .tab-headers {
+            display: flex;
+            border-bottom: 1px solid var(--gray-300);
+            margin-bottom: 1.5rem;
+        }
+        
+        .tab-header {
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .tab-header.active {
+            border-bottom-color: var(--primary);
+            color: var(--primary);
+            font-weight: 600;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
         /* Responsive Design */
         @media (max-width: 768px) {
             .nav-links {
@@ -527,6 +795,10 @@
             .left::after, .right::after {
                 left: 18px;
             }
+            
+            .tab-headers {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
@@ -550,7 +822,7 @@
                     <li><a href="#impact">Impact</a></li>
                     <li><a href="#roadmap">Roadmap</a></li>
                     <li><a href="#team">Team</a></li>
-                    <li><a href="#contact" class="btn">Get Involved</a></li>
+                    <li><a href="#" class="btn" id="login-btn">Login</a></li>
                 </ul>
             </nav>
         </div>
@@ -561,7 +833,7 @@
         <div class="container">
             <h1>Inclusive Peer-to-Peer Digital Education Platform</h1>
             <p>Bridging educational gaps with technology. Empowering learners and educators worldwide.</p>
-            <a href="#contact" class="btn">Join Our Mission</a>
+            <a href="#" class="btn" id="join-mission-btn">Join Our Mission</a>
         </div>
     </section>
 
@@ -688,24 +960,40 @@
             <div class="metrics">
                 <div class="metric">
                     <i class="fas fa-user-graduate"></i>
-                    <h3>100+</h3>
+                    <h3 id="students-count">0</h3>
                     <p>Students Impacted in Year 1</p>
                 </div>
                 <div class="metric">
                     <i class="fas fa-book"></i>
-                    <h3>500+</h3>
+                    <h3 id="resources-count">0</h3>
                     <p>Free Learning Resources</p>
                 </div>
                 <div class="metric">
                     <i class="fas fa-chalkboard"></i>
-                    <h3>40+</h3>
+                    <h3 id="sessions-count">0</h3>
                     <p>Peer Tutoring Sessions Monthly</p>
                 </div>
                 <div class="metric">
                     <i class="fas fa-globe"></i>
-                    <h3>5+</h3>
+                    <h3 id="countries-count">0</h3>
                     <p>Countries Reached</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Learning Resources</h2>
+                <p>Explore our curated collection of free educational materials</p>
+            </div>
+            <div class="resource-grid" id="resources-container">
+                <!-- Resources will be dynamically added here -->
+            </div>
+            <div class="text-center" style="margin-top: 2rem;">
+                <button class="btn btn-primary" id="load-more-resources">Load More Resources</button>
             </div>
         </div>
     </section>
@@ -768,7 +1056,7 @@
         <div class="container">
             <h2>Join Our Mission</h2>
             <p>We're looking for volunteers, partners, and supporters to help us bridge educational gaps worldwide. Together, we can make quality education accessible to all.</p>
-            <a href="#" class="btn">Get Involved</a>
+            <a href="#" class="btn" id="get-involved-btn">Get Involved</a>
         </div>
     </section>
 
@@ -816,69 +1104,863 @@
         </div>
     </footer>
 
+    <!-- Login Modal -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Login to OpenLearn</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="login-form">
+                    <div class="form-group">
+                        <label class="form-label" for="login-email">Email</label>
+                        <input type="email" id="login-email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="login-password">Password</label>
+                        <input type="password" id="login-password" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
+                    </div>
+                    <p class="text-center">Don't have an account? <a href="#" id="show-register">Register here</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal" id="register-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Join OpenLearn</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="register-form">
+                    <div class="form-group">
+                        <label class="form-label" for="register-name">Full Name</label>
+                        <input type="text" id="register-name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="register-email">Email</label>
+                        <input type="email" id="register-email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="register-password">Password</label>
+                        <input type="password" id="register-password" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="register-role">I want to join as:</label>
+                        <select id="register-role" class="form-select">
+                            <option value="student">Student</option>
+                            <option value="tutor">Tutor</option>
+                            <option value="volunteer">Volunteer</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Create Account</button>
+                    </div>
+                    <p class="text-center">Already have an account? <a href="#" id="show-login">Login here</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dashboard Modal -->
+    <div class="modal" id="dashboard-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">My Dashboard</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="tabs">
+                    <div class="tab-headers">
+                        <div class="tab-header active" data-tab="overview">Overview</div>
+                        <div class="tab-header" data-tab="resources">My Resources</div>
+                        <div class="tab-header" data-tab="sessions">Tutoring Sessions</div>
+                    </div>
+                    
+                    <div class="tab-content active" id="overview-tab">
+                        <div class="dashboard-grid">
+                            <div class="dashboard-card">
+                                <i class="fas fa-book"></i>
+                                <h3 id="user-resources-count">0</h3>
+                                <p>Resources Uploaded</p>
+                            </div>
+                            <div class="dashboard-card">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                <h3 id="user-sessions-count">0</h3>
+                                <p>Tutoring Sessions</p>
+                            </div>
+                            <div class="dashboard-card">
+                                <i class="fas fa-star"></i>
+                                <h3 id="user-rating">0.0</h3>
+                                <p>Average Rating</p>
+                            </div>
+                            <div class="dashboard-card">
+                                <i class="fas fa-trophy"></i>
+                                <h3 id="user-badges">3</h3>
+                                <p>Badges Earned</p>
+                            </div>
+                        </div>
+                        
+                        <h3>Recent Activity</h3>
+                        <div id="recent-activity">
+                            <!-- Recent activity will be populated here -->
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="resources-tab">
+                        <div class="resource-grid" id="user-resources">
+                            <!-- User resources will be populated here -->
+                        </div>
+                        <div class="text-center" style="margin-top: 2rem;">
+                            <button class="btn btn-primary" id="add-resource-btn">Add New Resource</button>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="sessions-tab">
+                        <div id="upcoming-sessions">
+                            <h3>Upcoming Sessions</h3>
+                            <!-- Upcoming sessions will be populated here -->
+                        </div>
+                        <div id="past-sessions" style="margin-top: 2rem;">
+                            <h3>Past Sessions</h3>
+                            <!-- Past sessions will be populated here -->
+                        </div>
+                        <div class="text-center" style="margin-top: 2rem;">
+                            <button class="btn btn-primary" id="schedule-session-btn">Schedule New Session</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Resource Modal -->
+    <div class="modal" id="add-resource-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Add Learning Resource</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="add-resource-form">
+                    <div class="form-group">
+                        <label class="form-label" for="resource-title">Title</label>
+                        <input type="text" id="resource-title" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="resource-description">Description</label>
+                        <textarea id="resource-description" class="form-textarea" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="resource-category">Category</label>
+                        <select id="resource-category" class="form-select" required>
+                            <option value="">Select Category</option>
+                            <option value="mathematics">Mathematics</option>
+                            <option value="science">Science</option>
+                            <option value="programming">Programming</option>
+                            <option value="languages">Languages</option>
+                            <option value="humanities">Humanities</option>
+                            <option value="arts">Arts</option>
+                            <option value="business">Business</option>
+                            <option value="test-prep">Test Preparation</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="resource-subject">Subject</label>
+                        <input type="text" id="resource-subject" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="resource-level">Level</label>
+                        <select id="resource-level" class="form-select" required>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="resource-file">File URL</label>
+                        <input type="url" id="resource-file" class="form-input" required placeholder="https://example.com/resource.pdf">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="resource-tags">Tags (comma separated)</label>
+                        <input type="text" id="resource-tags" class="form-input" placeholder="math, algebra, equations">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Add Resource</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <script>
-        // Mobile menu toggle
+        // Sample data for the application
+        const sampleResources = [
+            {
+                id: 1,
+                title: "Introduction to Algebra",
+                description: "A comprehensive guide to basic algebraic concepts and problem-solving techniques.",
+                category: "mathematics",
+                subject: "Algebra",
+                level: "beginner",
+                uploader: "Mathematics Department",
+                views: 245,
+                downloads: 120,
+                rating: 4.5,
+                fileType: "pdf",
+                tags: ["math", "algebra", "equations"]
+            },
+            {
+                id: 2,
+                title: "Python Programming Basics",
+                description: "Learn the fundamentals of Python programming with practical examples and exercises.",
+                category: "programming",
+                subject: "Python",
+                level: "beginner",
+                uploader: "CS Department",
+                views: 512,
+                downloads: 289,
+                rating: 4.8,
+                fileType: "video",
+                tags: ["programming", "python", "coding"]
+            },
+            {
+                id: 3,
+                title: "World History: Ancient Civilizations",
+                description: "Explore the rise and fall of ancient civilizations from Mesopotamia to Rome.",
+                category: "humanities",
+                subject: "History",
+                level: "intermediate",
+                uploader: "History Department",
+                views: 178,
+                downloads: 94,
+                rating: 4.2,
+                fileType: "pdf",
+                tags: ["history", "ancient", "civilizations"]
+            },
+            {
+                id: 4,
+                title: "Chemistry Lab Safety Guide",
+                description: "Essential safety procedures and best practices for chemistry laboratory work.",
+                category: "science",
+                subject: "Chemistry",
+                level: "beginner",
+                uploader: "Science Department",
+                views: 321,
+                downloads: 156,
+                rating: 4.6,
+                fileType: "document",
+                tags: ["chemistry", "safety", "lab"]
+            },
+            {
+                id: 5,
+                title: "English Vocabulary Builder",
+                description: "Expand your English vocabulary with themed word lists and interactive exercises.",
+                category: "languages",
+                subject: "English",
+                level: "beginner",
+                uploader: "Languages Department",
+                views: 198,
+                downloads: 112,
+                rating: 4.4,
+                fileType: "audio",
+                tags: ["English", "vocabulary", "language"]
+            },
+            {
+                id: 6,
+                title: "SAT Math Practice Tests",
+                description: "Full-length practice tests with detailed answer explanations for SAT Mathematics.",
+                category: "test-prep",
+                subject: "Mathematics",
+                level: "advanced",
+                uploader: "Test Prep Team",
+                views: 432,
+                downloads: 267,
+                rating: 4.7,
+                fileType: "pdf",
+                tags: ["sat", "math", "test-prep"]
+            }
+        ];
+
+        const sampleTutoringSessions = [
+            {
+                id: 1,
+                tutor: "Maria Rodriguez",
+                student: "John Smith",
+                subject: "Mathematics",
+                topic: "Calculus Derivatives",
+                scheduledTime: "2023-10-15T14:00:00",
+                duration: 60,
+                status: "completed",
+                rating: 5
+            },
+            {
+                id: 2,
+                tutor: "David Chen",
+                student: "You",
+                subject: "Programming",
+                topic: "Python Data Structures",
+                scheduledTime: "2023-10-20T16:30:00",
+                duration: 90,
+                status: "scheduled"
+            },
+            {
+                id: 3,
+                tutor: "Sarah Johnson",
+                student: "You",
+                subject: "Chemistry",
+                topic: "Organic Chemistry Reactions",
+                scheduledTime: "2023-10-05T10:00:00",
+                duration: 60,
+                status: "completed",
+                rating: 4
+            }
+        ];
+
+        const sampleUserResources = [
+            sampleResources[0],
+            sampleResources[3]
+        ];
+
+        // Application state
+        let currentUser = null;
+        let resources = [...sampleResources];
+        let userResources = [...sampleUserResources];
+        let tutoringSessions = [...sampleTutoringSessions];
+
+        // DOM Elements
         const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
         const navLinks = document.querySelector('.nav-links');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-        
-        // Close mobile menu when clicking on a link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-            });
+        const loginBtn = document.getElementById('login-btn');
+        const joinMissionBtn = document.getElementById('join-mission-btn');
+        const getInvolvedBtn = document.getElementById('get-involved-btn');
+        const loginModal = document.getElementById('login-modal');
+        const registerModal = document.getElementById('register-modal');
+        const dashboardModal = document.getElementById('dashboard-modal');
+        const addResourceModal = document.getElementById('add-resource-modal');
+        const modalCloses = document.querySelectorAll('.modal-close');
+        const showRegister = document.getElementById('show-register');
+        const showLogin = document.getElementById('show-login');
+        const loginForm = document.getElementById('login-form');
+        const registerForm = document.getElementById('register-form');
+        const addResourceForm = document.getElementById('add-resource-form');
+        const resourcesContainer = document.getElementById('resources-container');
+        const loadMoreResourcesBtn = document.getElementById('load-more-resources');
+        const tabHeaders = document.querySelectorAll('.tab-header');
+        const tabContents = document.querySelectorAll('.tab-content');
+        const addResourceBtn = document.getElementById('add-resource-btn');
+        const scheduleSessionBtn = document.getElementById('schedule-session-btn');
+
+        // Initialize the application
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize metrics animation
+            animateMetrics();
+            
+            // Load resources
+            loadResources();
+            
+            // Set up event listeners
+            setupEventListeners();
+            
+            // Check if user is logged in (for demo purposes)
+            checkLoginStatus();
         });
 
-        // Simple smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
+        // Set up all event listeners
+        function setupEventListeners() {
+            // Mobile menu toggle
+            mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+            
+            // Close mobile menu when clicking on a link
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                });
             });
-        });
-        
-        // Add a slight animation to metric numbers
-        const metricsSection = document.getElementById('impact');
-        const metrics = document.querySelectorAll('.metric h3');
-        
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    metrics.forEach(metric => {
-                        const target = parseInt(metric.textContent);
-                        let current = 0;
-                        const increment = Math.ceil(target / 50);
-                        
-                        const timer = setInterval(() => {
-                            current += increment;
-                            if (current >= target) {
-                                metric.textContent = target + '+';
-                                clearInterval(timer);
-                            } else {
-                                metric.textContent = current + '+';
-                            }
-                        }, 30);
-                    });
+            
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
                     
-                    observer.disconnect();
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Modal triggers
+            loginBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                openModal(loginModal);
+            });
+            
+            joinMissionBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                openModal(registerModal);
+            });
+            
+            getInvolvedBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                if (currentUser) {
+                    openModal(dashboardModal);
+                } else {
+                    openModal(registerModal);
                 }
             });
-        }, { threshold: 0.5 });
-        
-        observer.observe(metricsSection);
+            
+            // Modal closes
+            modalCloses.forEach(closeBtn => {
+                closeBtn.addEventListener('click', closeAllModals);
+            });
+            
+            // Switch between login and register modals
+            showRegister.addEventListener('click', (e) => {
+                e.preventDefault();
+                closeAllModals();
+                openModal(registerModal);
+            });
+            
+            showLogin.addEventListener('click', (e) => {
+                e.preventDefault();
+                closeAllModals();
+                openModal(loginModal);
+            });
+            
+            // Form submissions
+            loginForm.addEventListener('submit', handleLogin);
+            registerForm.addEventListener('submit', handleRegister);
+            addResourceForm.addEventListener('submit', handleAddResource);
+            
+            // Load more resources
+            loadMoreResourcesBtn.addEventListener('click', loadMoreResources);
+            
+            // Tab switching
+            tabHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    const tabId = header.getAttribute('data-tab');
+                    switchTab(tabId);
+                });
+            });
+            
+            // Dashboard actions
+            addResourceBtn.addEventListener('click', () => {
+                closeAllModals();
+                openModal(addResourceModal);
+            });
+            
+            scheduleSessionBtn.addEventListener('click', () => {
+                alert('Tutoring session scheduling feature coming soon!');
+            });
+            
+            // Close modals when clicking outside
+            window.addEventListener('click', (e) => {
+                if (e.target.classList.contains('modal')) {
+                    closeAllModals();
+                }
+            });
+        }
+
+        // Toggle mobile menu
+        function toggleMobileMenu() {
+            navLinks.classList.toggle('active');
+        }
+
+        // Open a modal
+        function openModal(modal) {
+            closeAllModals();
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Close all modals
+        function closeAllModals() {
+            document.querySelectorAll('.modal').forEach(modal => {
+                modal.classList.remove('active');
+            });
+            document.body.style.overflow = 'auto';
+        }
+
+        // Switch between tabs
+        function switchTab(tabId) {
+            // Update tab headers
+            tabHeaders.forEach(header => {
+                header.classList.toggle('active', header.getAttribute('data-tab') === tabId);
+            });
+            
+            // Update tab contents
+            tabContents.forEach(content => {
+                content.classList.toggle('active', content.id === `${tabId}-tab`);
+            });
+            
+            // Load tab content if needed
+            if (tabId === 'resources') {
+                loadUserResources();
+            } else if (tabId === 'sessions') {
+                loadTutoringSessions();
+            } else if (tabId === 'overview') {
+                loadDashboardOverview();
+            }
+        }
+
+        // Handle login form submission
+        function handleLogin(e) {
+            e.preventDefault();
+            const email = document.getElementById('login-email').value;
+            const password = document.getElementById('login-password').value;
+            
+            // Simple validation
+            if (!email || !password) {
+                alert('Please fill in all fields');
+                return;
+            }
+            
+            // For demo purposes, any login works
+            currentUser = {
+                name: email.split('@')[0],
+                email: email,
+                role: 'student'
+            };
+            
+            // Update UI
+            updateUIForUser();
+            
+            // Close modal and show success message
+            closeAllModals();
+            alert(`Welcome back, ${currentUser.name}!`);
+        }
+
+        // Handle register form submission
+        function handleRegister(e) {
+            e.preventDefault();
+            const name = document.getElementById('register-name').value;
+            const email = document.getElementById('register-email').value;
+            const password = document.getElementById('register-password').value;
+            const role = document.getElementById('register-role').value;
+            
+            // Simple validation
+            if (!name || !email || !password) {
+                alert('Please fill in all fields');
+                return;
+            }
+            
+            // For demo purposes, any registration works
+            currentUser = {
+                name: name,
+                email: email,
+                role: role
+            };
+            
+            // Update UI
+            updateUIForUser();
+            
+            // Close modal and show success message
+            closeAllModals();
+            alert(`Welcome to OpenLearn, ${currentUser.name}!`);
+        }
+
+        // Handle add resource form submission
+        function handleAddResource(e) {
+            e.preventDefault();
+            const title = document.getElementById('resource-title').value;
+            const description = document.getElementById('resource-description').value;
+            const category = document.getElementById('resource-category').value;
+            const subject = document.getElementById('resource-subject').value;
+            const level = document.getElementById('resource-level').value;
+            const fileUrl = document.getElementById('resource-file').value;
+            const tags = document.getElementById('resource-tags').value.split(',').map(tag => tag.trim());
+            
+            // Create new resource
+            const newResource = {
+                id: resources.length + 1,
+                title,
+                description,
+                category,
+                subject,
+                level,
+                uploader: currentUser.name,
+                views: 0,
+                downloads: 0,
+                rating: 0,
+                fileType: 'pdf', // Simplified for demo
+                tags,
+                fileUrl
+            };
+            
+            // Add to resources
+            resources.unshift(newResource);
+            userResources.unshift(newResource);
+            
+            // Update UI
+            loadResources();
+            loadUserResources();
+            
+            // Close modal and reset form
+            closeAllModals();
+            addResourceForm.reset();
+            
+            // Show success message
+            alert('Resource added successfully!');
+        }
+
+        // Update UI when user logs in
+        function updateUIForUser() {
+            if (currentUser) {
+                loginBtn.textContent = 'Dashboard';
+                loginBtn.removeAttribute('id');
+                loginBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    openModal(dashboardModal);
+                });
+                
+                // Load dashboard data
+                loadDashboardOverview();
+            }
+        }
+
+        // Check login status (for demo purposes)
+        function checkLoginStatus() {
+            // For demo, we'll randomly decide if user is logged in
+            const isLoggedIn = Math.random() > 0.5;
+            
+            if (isLoggedIn) {
+                currentUser = {
+                    name: 'Demo User',
+                    email: 'demo@openlearn.com',
+                    role: 'student'
+                };
+                updateUIForUser();
+            }
+        }
+
+        // Load resources into the resources container
+        function loadResources() {
+            resourcesContainer.innerHTML = '';
+            
+            resources.slice(0, 6).forEach(resource => {
+                const resourceCard = createResourceCard(resource);
+                resourcesContainer.appendChild(resourceCard);
+            });
+        }
+
+        // Load more resources
+        function loadMoreResources() {
+            // In a real app, this would fetch more resources from an API
+            // For demo, we'll just show an alert
+            alert('More resources loading feature would be implemented with a backend API');
+        }
+
+        // Load user resources in dashboard
+        function loadUserResources() {
+            const userResourcesContainer = document.getElementById('user-resources');
+            userResourcesContainer.innerHTML = '';
+            
+            if (userResources.length === 0) {
+                userResourcesContainer.innerHTML = '<p>You haven\'t uploaded any resources yet.</p>';
+                return;
+            }
+            
+            userResources.forEach(resource => {
+                const resourceCard = createResourceCard(resource);
+                userResourcesContainer.appendChild(resourceCard);
+            });
+        }
+
+        // Load tutoring sessions in dashboard
+        function loadTutoringSessions() {
+            const upcomingSessionsContainer = document.getElementById('upcoming-sessions');
+            const pastSessionsContainer = document.getElementById('past-sessions');
+            
+            upcomingSessionsContainer.innerHTML = '<p>No upcoming sessions.</p>';
+            pastSessionsContainer.innerHTML = '<p>No past sessions.</p>';
+            
+            const upcoming = tutoringSessions.filter(session => session.status === 'scheduled');
+            const past = tutoringSessions.filter(session => session.status === 'completed');
+            
+            if (upcoming.length > 0) {
+                upcomingSessionsContainer.innerHTML = '';
+                upcoming.forEach(session => {
+                    const sessionElement = createSessionElement(session);
+                    upcomingSessionsContainer.appendChild(sessionElement);
+                });
+            }
+            
+            if (past.length > 0) {
+                pastSessionsContainer.innerHTML = '';
+                past.forEach(session => {
+                    const sessionElement = createSessionElement(session);
+                    pastSessionsContainer.appendChild(sessionElement);
+                });
+            }
+        }
+
+        // Load dashboard overview
+        function loadDashboardOverview() {
+            // Update counts
+            document.getElementById('user-resources-count').textContent = userResources.length;
+            document.getElementById('user-sessions-count').textContent = tutoringSessions.filter(s => s.status === 'completed').length;
+            
+            // Calculate average rating
+            const ratedSessions = tutoringSessions.filter(s => s.rating);
+            const avgRating = ratedSessions.length > 0 
+                ? (ratedSessions.reduce((sum, session) => sum + session.rating, 0) / ratedSessions.length).toFixed(1)
+                : '0.0';
+            document.getElementById('user-rating').textContent = avgRating;
+            
+            // Load recent activity
+            const recentActivityContainer = document.getElementById('recent-activity');
+            recentActivityContainer.innerHTML = '';
+            
+            // Combine resources and sessions for activity feed
+            const activities = [
+                ...userResources.map(resource => ({
+                    type: 'resource',
+                    title: `Uploaded "${resource.title}"`,
+                    time: '2 days ago'
+                })),
+                ...tutoringSessions.map(session => ({
+                    type: 'session',
+                    title: `${session.status === 'completed' ? 'Completed' : 'Scheduled'} tutoring session on ${session.subject}`,
+                    time: '1 week ago'
+                }))
+            ];
+            
+            // Sort by time (simplified)
+            activities.sort(() => Math.random() - 0.5);
+            
+            // Display activities
+            activities.slice(0, 5).forEach(activity => {
+                const activityElement = document.createElement('div');
+                activityElement.className = 'card';
+                activityElement.style.marginBottom = '1rem';
+                activityElement.innerHTML = `
+                    <p><strong>${activity.title}</strong></p>
+                    <small>${activity.time}</small>
+                `;
+                recentActivityContainer.appendChild(activityElement);
+            });
+        }
+
+        // Create a resource card element
+        function createResourceCard(resource) {
+            const card = document.createElement('div');
+            card.className = 'resource-card';
+            
+            const iconClass = getFileTypeIcon(resource.fileType);
+            
+            card.innerHTML = `
+                <div class="resource-image">
+                    <i class="${iconClass}"></i>
+                </div>
+                <div class="resource-content">
+                    <span class="resource-category">${resource.category}</span>
+                    <h3 class="resource-title">${resource.title}</h3>
+                    <p class="resource-description">${resource.description}</p>
+                    <div class="resource-meta">
+                        <span><i class="fas fa-eye"></i> ${resource.views}</span>
+                        <span><i class="fas fa-download"></i> ${resource.downloads}</span>
+                        <span><i class="fas fa-star"></i> ${resource.rating}</span>
+                    </div>
+                </div>
+            `;
+            
+            return card;
+        }
+
+        // Create a tutoring session element
+        function createSessionElement(session) {
+            const element = document.createElement('div');
+            element.className = 'card';
+            element.style.marginBottom = '1rem';
+            
+            const date = new Date(session.scheduledTime);
+            const formattedDate = date.toLocaleDateString();
+            const formattedTime = date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+            
+            let ratingHTML = '';
+            if (session.rating) {
+                ratingHTML = `<p><strong>Rating:</strong> ${session.rating}/5</p>`;
+            }
+            
+            element.innerHTML = `
+                <h4>${session.subject} - ${session.topic}</h4>
+                <p><strong>Tutor:</strong> ${session.tutor}</p>
+                <p><strong>Date:</strong> ${formattedDate} at ${formattedTime}</p>
+                <p><strong>Duration:</strong> ${session.duration} minutes</p>
+                <p><strong>Status:</strong> ${session.status}</p>
+                ${ratingHTML}
+            `;
+            
+            return element;
+        }
+
+        // Get appropriate icon for file type
+        function getFileTypeIcon(fileType) {
+            switch (fileType) {
+                case 'pdf':
+                    return 'fas fa-file-pdf';
+                case 'video':
+                    return 'fas fa-file-video';
+                case 'audio':
+                    return 'fas fa-file-audio';
+                case 'document':
+                    return 'fas fa-file-word';
+                case 'presentation':
+                    return 'fas fa-file-powerpoint';
+                case 'image':
+                    return 'fas fa-file-image';
+                case 'link':
+                    return 'fas fa-link';
+                default:
+                    return 'fas fa-file';
+            }
+        }
+
+        // Animate metrics counter
+        function animateMetrics() {
+            const metricsSection = document.getElementById('impact');
+            const metrics = document.querySelectorAll('.metric h3');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        metrics.forEach(metric => {
+                            const target = parseInt(metric.textContent);
+                            let current = 0;
+                            const increment = Math.ceil(target / 50);
+                            
+                            const timer = setInterval(() => {
+                                current += increment;
+                                if (current >= target) {
+                                    metric.textContent = target + '+';
+                                    clearInterval(timer);
+                                } else {
+                                    metric.textContent = current + '+';
+                                }
+                            }, 30);
+                        });
+                        
+                        observer.disconnect();
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            observer.observe(metricsSection);
+        }
     </script>
 </body>
 </html>
