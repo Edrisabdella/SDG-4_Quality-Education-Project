@@ -1,4 +1,5 @@
 # OpenLearn - Inclusive Peer-to-Peer Digital Education Platform
+
 [![OpenLearn](https://img.shields.io/badge/OpenLearn-SDG%25204%2520Quality%2520Education-brightgreen)](https://github.com/EdrisAbdella/openlearn-sdg4)
 [![Version](https://img.shields.io/badge/version-1.0.0-blue)](https://github.com/EdrisAbdella/openlearn-sdg4)
 [![License](https://img.shields.io/badge/license-MIT-green)](../../../Downloads/OPENLEARN INDEX/OpenLearn_README/LICENSE.md)
@@ -7,6 +8,7 @@
 ---
 
 ## 🌟 Overview
+
 OpenLearn is a responsive, inclusive, and interactive **peer-to-peer digital education platform** designed to bridge educational gaps worldwide. Supporting **SDG 4: Quality Education**, it leverages modern web technologies to deliver accessible learning resources, peer tutoring, and collaborative study opportunities.
 
 **Tagline:** Bridging educational gaps with technology, one learner at a time.
@@ -14,14 +16,19 @@ OpenLearn is a responsive, inclusive, and interactive **peer-to-peer digital edu
 ---
 
 ## 🚀 Live Demo
-- **Live Platform:** [OpenLearn Demo](../../../Downloads/OPENLEARN INDEX/OpenLearn_README/README.md#)  
-- **GitHub Repository:** [OpenLearn GitHub](https://github.com/EdrisAbdella/openlearn-sdg4)  
-- **Pitch Deck:** [OpenLearn Gamma Presentation](../../../Downloads/OPENLEARN INDEX/OpenLearn_README/README.md#)  
+
+- **Live Platform:** [link](https://edrisabdella.github.io/SDG-4-QUALITY-EDUCATION-TECH/)
+
+- **GitHub Repository:**[\[OpenLearn GitHub\](https://github.com/EdrisAbdella/openlearn-sdg4)](https://github.com/Edrisabdella/SDG-4_Quality-Education-Project.git)
+
+- **Pitch Deck:** [OpenLearn Gamma Presentation][link](https://gamma.app/docs/OpenLearn-Inclusive-Peer-to-Peer-Digital-Platform-okuth4nuoa4bcmg)
 
 ---
 
 ## 🎯 Problem Statement
+
 Education inequality remains a global challenge:  
+
 - 260+ million children and youth worldwide lack access to education  
 - 50% of students in developing countries lack reliable internet  
 - Limited personalized support for academic success  
@@ -30,6 +37,7 @@ Education inequality remains a global challenge:
 ---
 
 ## 💡 Solution
+
 OpenLearn provides:
 
 | Feature | Description | Impact |
@@ -41,6 +49,7 @@ OpenLearn provides:
 | Gamification System | Badges, certificates, progress tracking | Improved motivation and engagement |
 
 ### Key Differentiators
+
 - **Inclusive Design:** Accessible to all users  
 - **Mobile-First:** Optimized for low-bandwidth devices  
 - **Global Reach:** Multi-language support  
@@ -52,12 +61,15 @@ OpenLearn provides:
 ## 🛠 Technology Stack
 
 **Frontend:**  
+
 - React.js, CSS3, Font Awesome, Framer Motion  
 
 **Backend:**  
+
 - Node.js, Express.js, MongoDB, JWT  
 
 **Development & Deployment:**  
+
 - Git & GitHub, Vercel, Heroku/Railway, Jest & Playwright  
 
 ---
@@ -75,17 +87,21 @@ OpenLearn provides:
 ---
 
 ## 🗺 Project Roadmap
+
 **2025**  
+
 - Phase 1: Foundation ✅  
 - Phase 2: Expansion 🚧  
 
 **2026**  
+
 - Phase 3: Growth 📈  
 - Phase 4: Scale 🌍  
 
 ---
 
 ## 🏗 Architecture
+
 ```
 openlearn/
 ├── client/                 # React Frontend
@@ -114,12 +130,14 @@ openlearn/
 ## ⚡ Quick Start
 
 **Option 1: Single HTML File**
+
 ```bash
 wget https://raw.githubusercontent.com/EdrisAbdella/openlearn-sdg4/main/openlearn.html
 open openlearn.html
 ```
 
 **Option 2: Full Stack Development**
+
 ```bash
 git clone https://github.com/EdrisAbdella/openlearn-sdg4.git
 cd openlearn-sdg4
@@ -139,6 +157,7 @@ npm run dev
 ---
 
 ## 🧪 Testing
+
 ```bash
 npm test                 # Run all tests
 npm run test:unit        # Unit tests
@@ -154,12 +173,14 @@ npm run test:security    # Security tests
 ## 🚀 Deployment
 
 **Frontend (Vercel)**
+
 ```bash
 npm i -g vercel
 vercel --prod
 ```
 
 **Backend (Railway/Heroku)**
+
 ```bash
 railway up
 # or
@@ -167,6 +188,7 @@ git push heroku main
 ```
 
 **Environment Variables**
+
 ```env
 # Server .env
 NODE_ENV=production
@@ -184,11 +206,13 @@ REACT_APP_API_URL=https://backend.com
 ## 📚 API Documentation
 
 **Authentication**
+
 - `POST /api/auth/register`  
 - `POST /api/auth/login`  
 - `GET  /api/auth/me`  
 
 **Resources**
+
 - `GET    /api/resources`  
 - `GET    /api/resources/:id`  
 - `POST   /api/resources`  
@@ -196,6 +220,7 @@ REACT_APP_API_URL=https://backend.com
 - `GET    /api/resources/stats/categories`  
 
 **Tutoring**
+
 - `GET    /api/tutoring`  
 - `POST   /api/tutoring`  
 - `PUT    /api/tutoring/:id/status`  
@@ -206,6 +231,7 @@ REACT_APP_API_URL=https://backend.com
 ---
 
 ## 🌐 Internationalization
+
 - ✅ English (Primary)  
 - 🚧 Spanish (Planned)  
 - 🚧 French (Planned)  
@@ -214,6 +240,7 @@ REACT_APP_API_URL=https://backend.com
 ---
 
 ## 🔒 Security
+
 - Data Encryption  
 - JWT Authentication  
 - Input Validation  
@@ -223,6 +250,7 @@ REACT_APP_API_URL=https://backend.com
 ---
 
 ## 📊 Analytics & Impact
+
 - Educational outcomes  
 - Engagement metrics  
 - Completion rates  
@@ -231,21 +259,24 @@ REACT_APP_API_URL=https://backend.com
 ---
 
 ## 🎓 Research & Publications
+
 - 2025: Planned studies on gamification impact  
 - 2026: Global adoption and peer learning impact  
 
 ---
 
 ## 💰 Funding & Sustainability
+
 - Grant funding, university partnerships, donations  
 - Sustainable model: grants → institutional partnerships → social enterprise  
 
 ---
 
 ## 👥 Team
+
 | Role | Name | Contact |
 |------|------|--------|
-| Project Lead | Edris Abdella | edrisabdella178@gmail.com |
+| Project Lead | Edris Abdella | <edrisabdella178@gmail.com> |
 | Full Stack Developer | Edris Abdella | GitHub |
 | UI/UX Designer | Volunteer | Open |
 | Content Curator | Volunteer | Open |
@@ -255,6 +286,7 @@ REACT_APP_API_URL=https://backend.com
 ---
 
 ## 🤝 How to Contribute
+
 1. Fork repo  
 2. Create feature branch  
 3. Commit changes  
@@ -266,20 +298,24 @@ REACT_APP_API_URL=https://backend.com
 ---
 
 ## 📞 Support
+
 - Documentation: [OpenLearn Docs](../../../Downloads/OPENLEARN INDEX/OpenLearn_README/README.md#)  
 - Community Forum: [OpenLearn Community](../../../Downloads/OPENLEARN INDEX/OpenLearn_README/README.md#)  
-- Email: support@openlearn.org  
+- Email: <support@openlearn.org>  
 
 ---
 
 ## 📄 License
+
 MIT License – see [LICENSE.md](../../../Downloads/OPENLEARN INDEX/OpenLearn_README/LICENSE.md)  
 
 ---
 
 ## 📬 Contact
+
 **Project Lead:** Edris Abdella  
-- Email: edrisabdella178@gmail.com  
+
+- Email: <edrisabdella178@gmail.com>  
 - LinkedIn: Edris Abdella Nuure  
 - GitHub: [Edris Abdella](https://github.com/EdrisAbdella)  
 
