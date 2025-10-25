@@ -1,0 +1,24 @@
+backend/
+├── config/
+│   └── db.js
+├── controllers/
+│   ├── authController.js
+│   ├── resourceController.js
+│   ├── sessionController.js
+│   └── analyticsController.js
+├── middleware/
+│   ├── authMiddleware.js
+│   └── errorMiddleware.js
+├── models/
+│   ├── User.js
+│   ├── Resource.js
+│   ├── Session.js
+│   └── Analytics.js
+├── routes/
+│   ├── authRoutes.js
+│   ├── resourceRoutes.js
+│   ├── sessionRoutes.js
+│   └── analyticsRoutes.js
+├── .env
+├── package.json
+└── server.js
