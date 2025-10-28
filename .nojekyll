@@ -1,0 +1,5 @@
+# disable Jekyll processing for GitHub Pages
+
+This repository is published to GitHub Pages and contains files (like node_modules) that include Liquid-like syntax. Creating an empty .nojekyll file at the publishing root prevents Jekyll from processing site files and avoids build failures.
+
+(Empty file created by automation.)
