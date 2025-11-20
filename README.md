@@ -1,11 +1,10 @@
 # OpenLearn - Inclusive Peer-to-Peer Digital Education Platform
 
-[![OpenLearn](https://img.shields.io/badge/OpenLearn-SDG%25204%2520Quality%2520Education-brightgreen)](https://github.com/EdrisAbdella/openlearn-sdg4)
-[![Version](https://img.shields.io/badge/version-1.0.0-blue)](https://github.com/EdrisAbdella/openlearn-sdg4)
-[![License](https://img.shields.io/badge/license-MIT-green)](../../../Downloads/OPENLEARN INDEX/OpenLearn_README/LICENSE.md)
-[![Build Status](https://img.shields.io/badge/build-passing-success)]()
+![OpenLearn](https://i.ibb.co/Kjhf4bz7/openlearn1.jpg)
 
----
+## 🎯 Overview
+
+OpenLearn is a comprehensive MERN stack application designed to bridge educational gaps through technology. It provides an inclusive platform for peer-to-peer learning, resource sharing, and collaborative education.
 
 ## 🌟 Overview
 
@@ -17,11 +16,11 @@ OpenLearn is a responsive, inclusive, and interactive **peer-to-peer digital edu
 
 ## 🚀 Live Demo
 
-- **Live Platform:** [link](https://edrisabdella.github.io/SDG-4-QUALITY-EDUCATION-TECH/)
+- **Live Platform:** [OpenLearn Live Demo](https://edrisabdella.github.io/SDG-4-QUALITY-EDUCATION-TECH/)
 
 - **GitHub Repository:**[\[OpenLearn GitHub\](https://github.com/EdrisAbdella/openlearn-sdg4)](https://github.com/Edrisabdella/SDG-4_Quality-Education-Project.git)
 
-- **Pitch Deck:** [OpenLearn Gamma Presentation][link](https://gamma.app/docs/OpenLearn-Inclusive-Peer-to-Peer-Digital-Platform-okuth4nuoa4bcmg)
+- **Pitch Deck:** [OpenLearn Gamma Presentation](https://gamma.app/docs/OpenLearn-Inclusive-Peer-to-Peer-Digital-Platform-okuth4nuoa4bcmg)
 
 ---
 
@@ -70,7 +69,7 @@ OpenLearn provides:
 
 **Development & Deployment:**  
 
-- Git & GitHub, Vercel, Heroku/Railway, Jest & Playwright  
+- Git & GitHub, Vercel, Render, Jest & Playwright  
 
 ---
 
@@ -100,43 +99,173 @@ OpenLearn provides:
 
 ---
 
-## 🏗 Architecture
-
-```
-openlearn/
-├── client/                 # React Frontend
-│   ├── src/
-│   │   ├── components/     # Reusable UI components
-│   │   ├── pages/          # Page components
-│   │   ├── contexts/       # React contexts (Auth, etc.)
-│   │   ├── services/       # API services
-│   │   └── utils/          # Helper functions
-│   └── public/             # Static assets
-├── server/                 # Node.js Backend
-│   ├── models/             # MongoDB models
-│   ├── routes/             # API routes
-│   ├── middleware/         # Custom middleware
-│   └── config/             # Configuration files
-├── tests/                  # Test suites
-│   ├── unit/
-│   ├── integration/
-│   ├── e2e/
-│   └── performance/
-└── docs/                   # Documentation
-```
-
+openlearn-mern/
+│── server/
+│   ├── config/
+│   │   ├── database.js
+│   │   ├── cloudinary.js
+│   │   └── email.js
+│   ├── controllers/
+│   │   ├── authController.js
+│   │   ├── userController.js
+│   │   ├── courseController.js
+│   │   ├── resourceController.js
+│   │   ├── tutoringController.js
+│   │   └── uploadController.js
+│   ├── models/
+│   │   ├── User.js
+│   │   ├── Course.js
+│   │   ├── Resource.js
+│   │   ├── TutoringSession.js
+│   │   ├── Token.js
+│   │   └── Enrollment.js
+│   ├── routes/
+│   │   ├── auth.js
+│   │   ├── users.js
+│   │   ├── courses.js
+│   │   ├── resources.js
+│   │   ├── tutoring.js
+│   │   └── uploads.js
+│   ├── middleware/
+│   │   ├── auth.js
+│   │   ├── errorHandler.js
+│   │   ├── validation.js
+│   │   ├── rateLimiter.js
+│   │   ├── logger.js
+│   │   └── upload.js
+│   ├── utils/
+│   │   ├── generateToken.js
+│   │   ├── catchAsync.js
+│   │   ├── AppError.js
+│   │   ├── emailTemplates.js
+│   │   └── helpers.js
+│   ├── validations/
+│   │   ├── authValidation.js
+│   │   ├── userValidation.js
+│   │   ├── courseValidation.js
+│   │   └── resourceValidation.js
+│   ├── services/
+│   │   ├── emailService.js
+│   │   ├── cloudinaryService.js
+│   │   └── paymentService.js
+│   ├── tests/
+│   │   ├── integration/
+│   │   └── unit/
+│   ├── .env
+│   ├── server.js
+│   ├── package.json
+│   └── render.yaml
+│
+└── client/
+    ├── public/
+    │   ├── index.html
+    │   ├── favicon.ico
+    │   └── manifest.json
+    ├── src/
+    │   ├── components/
+    │   │   ├── common/
+    │   │   │   ├── Navbar.jsx
+    │   │   │   ├── Footer.jsx
+    │   │   │   ├── Header.jsx
+    │   │   │   ├── LoadingSpinner.jsx
+    │   │   │   ├── Modal.jsx
+    │   │   │   ├── Toast.jsx
+    │   │   │   └── ProtectedRoute.jsx
+    │   │   ├── forms/
+    │   │   │   ├── LoginForm.jsx
+    │   │   │   ├── RegisterForm.jsx
+    │   │   │   ├── CourseForm.jsx
+    │   │   │   └── ResourceForm.jsx
+    │   │   ├── ui/
+    │   │   │   ├── Button.jsx
+    │   │   │   ├── Card.jsx
+    │   │   │   ├── Input.jsx
+    │   │   │   ├── Table.jsx
+    │   │   │   └── Badge.jsx
+    │   │   └── layout/
+    │   │       ├── MainLayout.jsx
+    │   │       └── DashboardLayout.jsx
+    │   ├── pages/
+    │   │   ├── auth/
+    │   │   │   ├── Login.jsx
+    │   │   │   └── Register.jsx
+    │   │   ├── dashboard/
+    │   │   │   ├── Dashboard.jsx
+    │   │   │   ├── Profile.jsx
+    │   │   │   └── Settings.jsx
+    │   │   ├── courses/
+    │   │   │   ├── CoursesList.jsx
+    │   │   │   ├── CourseDetail.jsx
+    │   │   │   └── CoursePlayer.jsx
+    │   │   ├── resources/
+    │   │   │   ├── ResourcesList.jsx
+    │   │   │   └── UploadResource.jsx
+    │   │   ├── tutoring/
+    │   │   │   ├── TutorsList.jsx
+    │   │   │   ├── TutoringSession.jsx
+    │   │   │   └── BecomeTutor.jsx
+    │   │   └── general/
+    │   │       ├── Home.jsx
+    │   │       ├── About.jsx
+    │   │       ├── Contact.jsx
+    │   │       └── Team.jsx
+    │   ├── hooks/
+    │   │   ├── useAuth.js
+    │   │   ├── useApi.js
+    │   │   ├── useForm.js
+    │   │   └── useLocalStorage.js
+    │   ├── context/
+    │   │   ├── AuthContext.js
+    │   │   ├── ThemeContext.js
+    │   │   └── LoadingContext.js
+    │   ├── redux/
+    │   │   ├── slices/
+    │   │   │   ├── authSlice.js
+    │   │   │   ├── userSlice.js
+    │   │   │   ├── courseSlice.js
+    │   │   │   └── uiSlice.js
+    │   │   ├── store.js
+    │   │   └── api/
+    │   │       ├── authApi.js
+    │   │       ├── coursesApi.js
+    │   │       └── resourcesApi.js
+    │   ├── services/
+    │   │   ├── api.js
+    │   │   ├── authService.js
+    │   │   ├── courseService.js
+    │   │   └── uploadService.js
+    │   ├── utils/
+    │   │   ├── constants.js
+    │   │   ├── formatters.js
+    │   │   ├── validators.js
+    │   │   └── helpers.js
+    │   ├── assets/
+    │   │   ├── images/
+    │   │   ├── styles/
+    │   │   │   ├── globals.css
+    │   │   │   ├── components.css
+    │   │   │   └── responsive.css
+    │   │   └── icons/
+    │   ├── routes/
+    │   │   └── AppRouter.jsx
+    │   ├── App.jsx
+    │   ├── main.jsx
+    │   └── index.css
+    ├── package.json
+    ├── vite.config.js
+    ├── .env
+    └── netlify.toml
 ---
 
 ## ⚡ Quick Start
 
-**Option 1: Single HTML File**
+### Option 1: Single HTML File
 
 ```bash
 wget https://raw.githubusercontent.com/EdrisAbdella/openlearn-sdg4/main/openlearn.html
 open openlearn.html
-```
 
-**Option 2: Full Stack Development**
+or
 
 ```bash
 git clone https://github.com/EdrisAbdella/openlearn-sdg4.git
@@ -149,7 +278,7 @@ cp server/.env.example server/.env
 
 npm run dev
 # Frontend: http://localhost:3000
-# Backend: http://localhost:5000
+# Backend: [[Render live link](https://sdg-4-quality-education-project-by-edris.onrender.com)](https://sdg-4-quality-education-project-by-edris.onrender.com)
 ```
 
 **Prerequisites:** Node.js 16+, MongoDB 5.0+, modern browser  
@@ -160,71 +289,26 @@ npm run dev
 
 ```bash
 npm test                 # Run all tests
-npm run test:unit        # Unit tests
-npm run test:integration # Integration tests
-npm run test:e2e         # End-to-end tests
-npm run test:coverage    # Coverage report
-npm run test:performance # Performance tests
-npm run test:security    # Security tests
+
 ```
 
 ---
 
 ## 🚀 Deployment
 
-**Frontend (Vercel)**
+### Frontend (Vercel)
 
 ```bash
 npm i -g vercel
 vercel --prod
 ```
 
-**Backend (Railway/Heroku)**
+### Backend (Render)
 
 ```bash
-railway up
-# or
-git push heroku main
+
+git push render
 ```
-
-**Environment Variables**
-
-```env
-# Server .env
-NODE_ENV=production
-PORT=5000
-MONGODB_URI=your_mongodb_uri
-JWT_SECRET=your_jwt_secret
-CLIENT_URL=https://frontend.com
-
-# Client .env
-REACT_APP_API_URL=https://backend.com
-```
-
----
-
-## 📚 API Documentation
-
-**Authentication**
-
-- `POST /api/auth/register`  
-- `POST /api/auth/login`  
-- `GET  /api/auth/me`  
-
-**Resources**
-
-- `GET    /api/resources`  
-- `GET    /api/resources/:id`  
-- `POST   /api/resources`  
-- `PUT    /api/resources/:id`  
-- `GET    /api/resources/stats/categories`  
-
-**Tutoring**
-
-- `GET    /api/tutoring`  
-- `POST   /api/tutoring`  
-- `PUT    /api/tutoring/:id/status`  
-- `POST   /api/tutoring/:id/rate`  
 
 **Full API docs:** [OpenLearn API Docs](../../../Downloads/OPENLEARN INDEX/OpenLearn_README/README.md#)  
 
@@ -321,8 +405,8 @@ MIT License – see [LICENSE.md](../../../Downloads/OPENLEARN INDEX/OpenLearn_RE
 
 **Repository:** [OpenLearn GitHub](https://github.com/EdrisAbdella/openlearn-sdg4)  
 
-<div align="center">
-🌟 Join Our Mission  
-Together, we can bridge educational gaps for future generations.  
-Made with ❤️ for **SDG 4: Quality Education**
-</div>
+### 🌟 Join Our Mission
+
+Together, we can bridge educational gaps for future generations.
+
+Made with ❤️ for **SDG 4: Quality Education by Edris Abdella**
