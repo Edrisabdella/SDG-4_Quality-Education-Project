@@ -20,7 +20,7 @@ OpenLearn is a responsive, inclusive, and interactive **peer-to-peer digital edu
 
 - **GitHub Repository:**[\[OpenLearn GitHub\](https://github.com/EdrisAbdella/openlearn-sdg4)](https://github.com/Edrisabdella/SDG-4_Quality-Education-Project.git)
 
-- **Pitch Deck:** [OpenLearn Gamma Presentation](https://gamma.app/docs/OpenLearn-Bridging-Educational-Gaps-with-Inclusive-Peer-to-Peer-D-ro5bl6wgxvi45qi)
+- **Pitch Deck:** [OpenLearn Presentation](https://docs.google.com/presentation/d/1fKFA2aMuMz1YQiKiyJGYVaj0bwEnT13L/edit?usp=sharing&ouid=117719309502651175197&rtpof=true&sd=true)
 
 ---
 
