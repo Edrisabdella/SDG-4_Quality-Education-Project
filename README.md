@@ -1,6 +1,6 @@
 # OpenLearn - Inclusive Peer-to-Peer Digital Education Platform
 
-![OpenLearn](https://i.ibb.co/Kjhf4bz7/openlearn1.jpg)
+![OpenLearn](https://i.ibb.co/YB7dwx68/OPENLEARN-LOGO.png)
 
 ## 🎯 Overview
 
@@ -20,7 +20,7 @@ OpenLearn is a responsive, inclusive, and interactive **peer-to-peer digital edu
 
 - **GitHub Repository:**[\[OpenLearn GitHub\](https://github.com/EdrisAbdella/openlearn-sdg4)](https://github.com/Edrisabdella/SDG-4_Quality-Education-Project.git)
 
-- **Pitch Deck:** [OpenLearn Gamma Presentation](https://gamma.app/docs/OpenLearn-Inclusive-Peer-to-Peer-Digital-Platform-okuth4nuoa4bcmg)
+- **Pitch Deck:** [OpenLearn Gamma Presentation](https://gamma.app/docs/OpenLearn-Bridging-Educational-Gaps-with-Inclusive-Peer-to-Peer-D-ro5bl6wgxvi45qi)
 
 ---
 
@@ -254,7 +254,7 @@ openlearn-mern/
     ├── package.json
     ├── vite.config.js
     ├── .env
-    └── netlify.toml
+
 ---
 
 ## ⚡ Quick Start
