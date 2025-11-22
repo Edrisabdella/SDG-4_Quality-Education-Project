@@ -16,7 +16,7 @@ OpenLearn is a responsive, inclusive, and interactive **peer-to-peer digital edu
 
 ## 🚀 Live Demo
 
-- **Live Platform:** [OpenLearn Live Demo](https://edrisabdella.github.io/SDG-4-QUALITY-EDUCATION-TECH/)
+- **Live Platform:** [https://sdg-4-quality-education-project.onrender.com/](https://sdg-4-quality-education-project.onrender.com/)
 
 - **GitHub Repository:**[\[OpenLearn GitHub\](https://github.com/EdrisAbdella/openlearn-sdg4)](https://github.com/Edrisabdella/SDG-4_Quality-Education-Project.git)
 
