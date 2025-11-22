@@ -104,7 +104,7 @@ NODE_ENV=development
 PORT=5000
 
 # Database (MongoDB Atlas)
-MONGODB_URI=mongodb+srv://edrisabdella178_db_user:openlearn@openlearn-app.ptijnyn.mongodb.net/openlearn?retryWrites=true&w=majority
+MONGODB_URI=mongodb+srv://edrisabdella178_db_user:open*****@openlearn-app.ptijnyn.mongodb.net/openlearn?retryWrites=true&w=majority
 
 # JWT Authentication
 JWT_SECRET=your_super_secure_jwt_secret_key_here
