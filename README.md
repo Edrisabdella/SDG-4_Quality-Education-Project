@@ -98,69 +98,74 @@ OpenLearn provides:
 - Phase 4: Scale 🌍  
 
 ---
-openlearn-mern/
-│── server/
-│   ├── config/
-│   │   ├── database.js
-│   │   ├── cloudinary.js
-│   │   └── email.js
-│   ├── controllers/
-│   │   ├── authController.js
-│   │   ├── userController.js
-│   │   ├── courseController.js
-│   │   ├── resourceController.js
-│   │   ├── tutoringController.js
-│   │   └── uploadController.js
-│   ├── models/
-│   │   ├── User.js
-│   │   ├── Course.js
-│   │   ├── Resource.js
-│   │   ├── TutoringSession.js
-│   │   ├── Token.js
-│   │   └── Enrollment.js
-│   ├── routes/
-│   │   ├── auth.js
-│   │   ├── users.js
-│   │   ├── courses.js
-│   │   ├── resources.js
-│   │   ├── tutoring.js
-│   │   └── uploads.js
-│   ├── middleware/
-│   │   ├── auth.js
-│   │   ├── errorHandler.js
-│   │   ├── validation.js
-│   │   ├── rateLimiter.js
-│   │   ├── logger.js
-│   │   └── upload.js
-│   ├── utils/
-│   │   ├── generateToken.js
-│   │   ├── catchAsync.js
-│   │   ├── AppError.js
-│   │   ├── emailTemplates.js
-│   │   └── helpers.js
-│   ├── validations/
-│   │   ├── authValidation.js
-│   │   ├── userValidation.js
-│   │   ├── courseValidation.js
+openlearn-mern/                                                                                                                                                                 
+│── server/ 
+
+│   ├── config/                                                                                                                                                  
+│   │   ├── database.js                                                                                                                                                                                                                                                                         
+│   │   ├── cloudinary.js                                                                                                                                                         
+│   │   └── email.js                                                                                                                                                                                                                 
+│   ├── controllers/                                                                                                                                                                                                                                                                                                                                                                                                
+│   │   ├── authController.js                                                                                                                                                        
+│   │   ├── userController.js                                                                                                                                              
+│   │   ├── courseController.js                                                                                                                                             
+│   │   ├── resourceController.js                                                                                                                                      
+│   │   ├── tutoringController.js                                                                                                                                                                                                                                                              
+│   │   └── uploadController.js                                                                                                                                   
+│   ├── models/                                                                                                                                                    
+│   │   ├── User.js                                                                                                                                                  
+│   │   ├── Course.js                                                                                                                                             
+│   │   ├── Resource.js                                                                                                                                           
+│   │   ├── TutoringSession.js                                                                                                                                                 
+│   │   ├── Token.js                                                                                                                                               
+│   │   └── Enrollment.js                                                                                                                                          
+│   ├── routes/                                                                                                                                                     
+│   │   ├── auth.js                                                                                                                                                   
+│   │   ├── users.js                                                                                                                                                  
+│   │   ├── courses.js                                                             
+│   │   ├── resources.js                                                                                                                                                                                                                
+│   │   ├── tutoring.js                                                                                                                                           
+│   │   └── uploads.js                                                                                                                                             
+│   ├── middleware/                             
+│   │   ├── auth.js                                                                                                                                                            
+│   │   ├── errorHandler.js                                                                                                                                   
+│   │   ├── validation.js                                                                                                                                          
+│   │   ├── rateLimiter.js                                                                                                                                         
+│   │   ├── logger.js                                                                                                                                            
+│   │   └── upload.js                                                                                                                                              
+│   ├── utils/                                                                                                                                                                  
+│   │   ├── generateToken.js                                                                                                                                 
+│   │   ├── catchAsync.js                                            
+│   │   ├── AppError.js                                                                                                                                           
+│   │   ├── emailTemplates.js                                                                                                    
+│   │   └── helpers.js 
+
+│   ├── validations/                                                                                                                                                
+│   │   ├── authValidation.js                                                                                                                                     
+│   │   ├── userValidation.js                                                                                                                                                   
+│   │   ├── courseValidation.js                                                                                                                                   
 │   │   └── resourceValidation.js
-│   ├── services/
-│   │   ├── emailService.js
-│   │   ├── cloudinaryService.js
+
+│   ├── services/                                                                                                                                                 
+│   │   ├── emailService.js                                                                                                                                          
+│   │   ├── cloudinaryService.js                                                                                                                                  
 │   │   └── paymentService.js
-│   ├── tests/
-│   │   ├── integration/
-│   │   └── unit/
-│   ├── .env
-│   ├── server.js
-│   ├── package.json
-│   └── render.yaml
+
+│   ├── tests/                                                                                                                                                    
+│   │   ├── integration/                                                                                                                                          
+│   │   └── unit/                                                                                                                                                                                                                                                                                                
+│   ├── .env                                                                                                                                                      
+│   ├── server.js                                                                                                                                                 
+│   └── package.json                                                                                                                                                       
+
 │
-└── client/
-    ├── public/
-    │   ├── index.html
-    │   ├── favicon.ico
-    │   └── manifest.json
-    ├── src/
+└── client/                                                                                                                                                       
+    ├── public/                                                                                                                                                   
+    │   ├── index.html                                                                                                                                            
+    │   ├── favicon.ico                                                                                                                                            
+    │   └── manifest.json                                                          
+    
+    ├── src/                                                                       
     │   ├── components/
     │   │   ├── common/
     │   │   │   ├── Navbar.jsx
@@ -170,74 +175,90 @@ openlearn-mern/
     │   │   │   ├── Modal.jsx
     │   │   │   ├── Toast.jsx
     │   │   │   └── ProtectedRoute.jsx
+    
     │   │   ├── forms/
     │   │   │   ├── LoginForm.jsx
     │   │   │   ├── RegisterForm.jsx
     │   │   │   ├── CourseForm.jsx
     │   │   │   └── ResourceForm.jsx
+    
     │   │   ├── ui/
     │   │   │   ├── Button.jsx
     │   │   │   ├── Card.jsx
     │   │   │   ├── Input.jsx
     │   │   │   ├── Table.jsx
     │   │   │   └── Badge.jsx
+    
     │   │   └── layout/
     │   │       ├── MainLayout.jsx
     │   │       └── DashboardLayout.jsx
+    
     │   ├── pages/
     │   │   ├── auth/
     │   │   │   ├── Login.jsx
     │   │   │   └── Register.jsx
+    
     │   │   ├── dashboard/
     │   │   │   ├── Dashboard.jsx
     │   │   │   ├── Profile.jsx
     │   │   │   └── Settings.jsx
+    
     │   │   ├── courses/
     │   │   │   ├── CoursesList.jsx
     │   │   │   ├── CourseDetail.jsx
     │   │   │   └── CoursePlayer.jsx
+    
     │   │   ├── resources/
     │   │   │   ├── ResourcesList.jsx
     │   │   │   └── UploadResource.jsx
+    
     │   │   ├── tutoring/
     │   │   │   ├── TutorsList.jsx
     │   │   │   ├── TutoringSession.jsx
     │   │   │   └── BecomeTutor.jsx
+    
     │   │   └── general/
     │   │       ├── Home.jsx
     │   │       ├── About.jsx
     │   │       ├── Contact.jsx
     │   │       └── Team.jsx
+    
     │   ├── hooks/
     │   │   ├── useAuth.js
     │   │   ├── useApi.js
     │   │   ├── useForm.js
     │   │   └── useLocalStorage.js
+    
     │   ├── context/
     │   │   ├── AuthContext.js
     │   │   ├── ThemeContext.js
     │   │   └── LoadingContext.js
+    
     │   ├── redux/
     │   │   ├── slices/
     │   │   │   ├── authSlice.js
     │   │   │   ├── userSlice.js
     │   │   │   ├── courseSlice.js
     │   │   │   └── uiSlice.js
+    
     │   │   ├── store.js
     │   │   └── api/
     │   │       ├── authApi.js
     │   │       ├── coursesApi.js
     │   │       └── resourcesApi.js
+    
     │   ├── services/
     │   │   ├── api.js
     │   │   ├── authService.js
     │   │   ├── courseService.js
     │   │   └── uploadService.js
+    
     │   ├── utils/
     │   │   ├── constants.js
     │   │   ├── formatters.js
     │   │   ├── validators.js
     │   │   └── helpers.js
+    
     │   ├── assets/
     │   │   ├── images/
     │   │   ├── styles/
@@ -245,14 +266,17 @@ openlearn-mern/
     │   │   │   ├── components.css
     │   │   │   └── responsive.css
     │   │   └── icons/
+    
     │   ├── routes/
     │   │   └── AppRouter.jsx
+    
     │   ├── App.jsx
     │   ├── main.jsx
     │   └── index.css
-    ├── package.json
-    ├── vite.config.js
-    ├── .env
+    
+    ├── package.json                                                                                                                                           .
+    ├── vite.config.js                                                                                                                                          .
+    ├── .env                                                                                                                                                    .
 ---
 
 ## ⚡ Quick Start
