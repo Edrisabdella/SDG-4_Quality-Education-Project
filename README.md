@@ -159,11 +159,13 @@ openlearn-mern/
 │   └── package.json                                                                                                                                                       
 
 │
+
+    
 └── client/                                                                                                                                                       
     ├── public/                                                                                                                                                   
     │   ├── index.html                                                                                                                                            
     │   ├── favicon.ico                                                                                                                                            
-    │   └── manifest.json                                                          
+    │   └── manifest.json 
     
     ├── src/                                                                       
     │   ├── components/
