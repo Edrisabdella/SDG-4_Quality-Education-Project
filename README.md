@@ -98,7 +98,6 @@ OpenLearn provides:
 - Phase 4: Scale 🌍  
 
 ---
-
 openlearn-mern/
 │── server/
 │   ├── config/
@@ -254,7 +253,6 @@ openlearn-mern/
     ├── package.json
     ├── vite.config.js
     ├── .env
-
 ---
 
 ## ⚡ Quick Start
