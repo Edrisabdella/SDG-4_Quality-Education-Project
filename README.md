@@ -1,14 +1,14 @@
-# OpenLearn - Inclusive Peer-to-Peer Digital Education Platform
+# EastEdge Vocational training School offers - Inclusive Peer-to-Peer Digital Education Platform
 
 ![OpenLearn](https://i.ibb.co/YB7dwx68/OPENLEARN-LOGO.png)
 
 ## 🎯 Overview
 
-OpenLearn is a comprehensive MERN stack application designed to bridge educational gaps through technology. It provides an inclusive platform for peer-to-peer learning, resource sharing, and collaborative education.
+EastEdge Tech training is a comprehensive MERN stack application designed to bridge educational gaps through technology. It provides an inclusive platform for peer-to-peer learning, resource sharing, and collaborative education.
 
 ## 🌟 Overview
 
-OpenLearn is a responsive, inclusive, and interactive **peer-to-peer digital education platform** designed to bridge educational gaps worldwide. Supporting **SDG 4: Quality Education**, it leverages modern web technologies to deliver accessible learning resources, peer tutoring, and collaborative study opportunities.
+EastEdge Tech training is a responsive, inclusive, and interactive **peer-to-peer digital education platform** designed to bridge educational gaps worldwide. Supporting **SDG 4: Quality Education**, it leverages modern web technologies to deliver accessible learning resources, peer tutoring, and collaborative study opportunities.
 
 **Tagline:** Bridging educational gaps with technology, one learner at a time.
 
@@ -37,7 +37,7 @@ Education inequality remains a global challenge:
 
 ## 💡 Solution
 
-OpenLearn provides:
+EastEdge Tech training provides:
 
 | Feature | Description | Impact |
 |---------|-------------|--------|
@@ -98,7 +98,7 @@ OpenLearn provides:
 - Phase 4: Scale 🌍  
 
 ---
-openlearn-mern/                                                                                                                                                                 
+EastEdge Tech training-mern/                                                                                                                                                                 
 │── server/ 
 
 │   ├── config/                                                                                                                                                  
@@ -425,7 +425,8 @@ MIT License – see [LICENSE.md](../../../Downloads/OPENLEARN INDEX/OpenLearn_RE
 
 - Email: <edrisabdella178@gmail.com>  
 - LinkedIn: Edris Abdella Nuure  
-- GitHub: [Edris Abdella](https://github.com/EdrisAbdella)  
+- GitHub: [Edris Abdella](https://github.com/EdrisAbdella)
+- EastEdge vocational and training school 
 
 **Repository:** [OpenLearn GitHub](https://github.com/EdrisAbdella/openlearn-sdg4)  
 
